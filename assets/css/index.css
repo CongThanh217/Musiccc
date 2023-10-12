@@ -7,7 +7,8 @@
 html{
     font-family: "Poppins", sans-serif;
     box-sizing: border-box;
-    background: url(/background.jpg) no-repeat;
+     /* dang len git hub thi phai co dau cham truoc assets */
+    background: url('./assets/img/background.jpg') no-repeat;
     height: 1300px; 
 
     background-size: cover;
@@ -70,6 +71,44 @@ html{
   font-size:25px;
   top:10px;
   cursor: pointer;
+  animation: moon-fall 2s ease infinite;
+}
+
+@keyframes moon-fall{
+  0%{
+  rotate: 0deg;
+  }
+  
+  15%{
+  rotate: 10deg;
+  }
+
+  25%{
+    rotate: 15deg;
+  }
+
+  35%{
+    rotate: 20deg;
+  }
+
+  45%{
+    rotate: 25deg;
+  }
+  55%{
+    rotate: 30deg;
+  }
+  65%{
+    rotate: 25deg;
+  }
+  85%{
+    rotate: 20deg;
+  }
+  95%{
+    rotate: 15deg;
+  }
+  100%{
+    rotate: 7deg;
+  }
 }
 
 .fa-moon.active{
@@ -94,6 +133,8 @@ html{
   top:55px;
   opacity: 0;
 }
+
+
 
 .fa-moon.up{
   transition: 0.5s ease;
